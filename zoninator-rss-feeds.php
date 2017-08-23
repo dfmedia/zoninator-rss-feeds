@@ -72,6 +72,14 @@ if ( ! class_exists( 'Zoninator_RSS_Feeds' ) ) :
 
 		}
 
+		/**
+		 * This sets the RSS content type for the feed to RSS2
+		 *
+		 * @param $content_type
+		 * @param $type
+		 *
+		 * @return mixed|void
+		 */
 		public function set_zoninator_feed_to_rss2( $content_type, $type ) {
 			if ( $this->zone_taxonomy === $type ) {
 				return feed_content_type( 'rss2' );
